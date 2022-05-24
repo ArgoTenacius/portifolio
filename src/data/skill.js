@@ -1,4 +1,4 @@
-export const skill = [
+export const frontEnd = [
     {
         name: "CSS",
         photo: "https://img.icons8.com/color/64/css3.png"
@@ -12,17 +12,12 @@ export const skill = [
         photo: "https://img.icons8.com/color/64/javascript--v1.png"
     },
     {
-        name: "Github",
-        photo: "https://img.icons8.com/ios-glyphs/64/github.png"
-    },
-    {
-        name: "Git",
-        photo: "https://img.icons8.com/color/64/git.png"
-    },
-    {
         name: "React",
         photo: "https://img.icons8.com/cute-clipart/64/react-native.png"
-    },
+    }
+]
+
+export const miscellaneous = [
     {
         name: "Firebase",
         photo: "https://img.icons8.com/color/64/firebase.png"
@@ -34,5 +29,13 @@ export const skill = [
     {
         name: "Webpack",
         photo: "https://img.icons8.com/color/64/webpack.png"
+    },
+    {
+        name: "Github",
+        photo: "https://img.icons8.com/ios-glyphs/64/github.png"
+    },
+    {
+        name: "Git",
+        photo: "https://img.icons8.com/color/64/git.png"
     }
 ]

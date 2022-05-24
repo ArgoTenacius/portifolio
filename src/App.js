@@ -1,10 +1,11 @@
 import React from 'react'
 import './app.css'
+import { Skill } from './components'
 
 const App = () => {
   return (
     <main>
-        App
+        <Skill />
     </main>
   )
 }
