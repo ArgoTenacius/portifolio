@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --bg: #241734;
+    --bg-light: #2E2157;
+    --red: #A31621;
+    --yellow: #E3B505;
+    --pink: #F706CF;
+
+    --css: url("https://img.icons8.com/color/64/css3.png");
+    --html: url("https://img.icons8.com/color/64/html-5--v1.png");
+    --javascript: url("https://img.icons8.com/color/64/javascript--v1.png");
+    --github: url("https://img.icons8.com/ios-glyphs/64/github.png");
+    --git: url("https://img.icons8.com/color/64/git.png");
+    --react: url("https://img.icons8.com/cute-clipart/64/react-native.png");
+    --firebase: url("https://img.icons8.com/color/64/firebase.png");
+    --npm: url("https://img.icons8.com/color/64/npm.png");
+    --webpack: url("https://img.icons8.com/color/64/webpack.png");
+}
