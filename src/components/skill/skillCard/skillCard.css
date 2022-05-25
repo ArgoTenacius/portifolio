@@ -1,0 +1,21 @@
+.skillCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: ease-in-out 0.2s;
+}
+
+.skillCard__container{
+    width: 96px;
+    height: 96px;
+    background-color: var(--white-light);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.skillCard__title{
+    height: 0px;
+    font-size: clamp(0.5rem, 2vw, 1.25rem);
+    color: var(--white-light);
+}
