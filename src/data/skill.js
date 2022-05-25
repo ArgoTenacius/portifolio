@@ -13,7 +13,7 @@ export const frontEnd = [
     },
     {
         name: "React",
-        photo: "https://img.icons8.com/cute-clipart/64/react-native.png"
+        photo: "https://cdn-icons-png.flaticon.com/64/1126/1126012.png"
     }
 ]
 

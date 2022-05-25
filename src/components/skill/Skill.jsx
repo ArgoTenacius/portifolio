@@ -7,18 +7,18 @@ import SkillCard from './skillCard/SkillCard'
 
 const Skill = () => {
   return (
-    <main>
-        <section>
+    <main className='skill'>
+        <section className='skill__block'>
             {
-                frontEnd.map((index) => (
-                    <SkillCard name={index.name} icon={index.photo} />
+                frontEnd.map((index, id) => (
+                    <SkillCard key={id} name={index.name} icon={index.photo} />
                 ))
             }
         </section>
-        <section>
+        <section className='skill__block'>
             {
-                miscellaneous.map((index) => (
-                    <SkillCard name={index.name} icon={index.photo} />
+                miscellaneous.map((index, id) => (
+                    <SkillCard key={id} name={index.name} icon={index.photo} />
                 ))
             }
         </section>
