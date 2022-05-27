@@ -1,0 +1,102 @@
+.project__section{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 4%;
+}
+
+.project__section:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.project__section-images--photo{
+    aspect-ratio: 2 / 1;
+    width: clamp(480px, 50vw, 640px);
+    height: auto;
+    border-radius: 20px;
+}
+
+.project__section-images, .project__section-details{
+    margin: 2%;
+}
+
+.project__section-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.project__section-details--title{
+    color: var(--white-light);
+}
+
+.project__section-details--description{
+    font-size: clamp(12px, 1.25vw, 16px);
+    color: var(--white);
+}
+
+.project__section-details *{
+    margin-block: 2.5%;
+}
+
+.project__section-details--buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+}
+
+.project__section-details--buttons button{
+    cursor: pointer;
+    background-color: transparent;
+    width: clamp(100px, 15vw,200px);
+    font-size: clamp(16px, 5vw, 24px);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--pink);
+    transition: ease-in-out 0.2s;
+}
+
+.project__section-details--buttons button:hover{
+    letter-spacing: 2px;
+    box-shadow: inset 0 -50px 0 0 var(--pink),
+    0 0 0.5rem 0 var(--pink),
+    0 0 1rem 0 var(--pink),
+    0 0 2rem 0 var(--pink);
+}
+
+@media screen and (max-width: 960px) {
+    .project__section{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .project__section-images{
+        text-align: center;
+    }
+    
+    .project__section:nth-child(even){
+        flex-direction: column;
+    }
+
+    .project__section-details{
+        width: 70%;
+    }
+
+    .project__section-details--description{
+        font-size: clamp(16px, 2.5vw, 24px);
+    }
+
+    .project__section-details--buttons button{
+        width: 200px;
+        font-size: 2rem;
+    }
+
+    .project__section-images--photo{
+        width: clamp(480px, 90%, 960px);
+    }
+}

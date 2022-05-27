@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -30,8 +31,14 @@
     --yellow: #E3B505;
     --pink: #F706CF;
     --white-light: rgba(255, 255, 255, 0.87);
-    --white: rgba(255, 255, 255, 0.60);
-    --white-dark: rgba(255, 255, 255, 0.38);
+    --white: rgba(255, 255, 255, 0.70);
+    --white-dark: rgba(255, 255, 255, 0.48);
+}
+
+.page{
+    min-height: 100vh;
+    height: max-content;
+    background-color: var(--bg);
 }
 
 .red{
