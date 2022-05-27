@@ -1,11 +1,11 @@
 import React from 'react'
 import './app.css'
-import { Skill } from './components'
+import { Project, Skill } from './components'
 
 const App = () => {
   return (
-    <main>
-        <Skill />
+    <main className='page'>
+      <Project />
     </main>
   )
 }
