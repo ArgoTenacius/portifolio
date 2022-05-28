@@ -1,19 +1,23 @@
 .skill{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .skill__block{
-    width: 33vw;
-    height: 100%;
+    aspect-ratio: 2 / 1.25;
+    width: max(33vw, 410px);
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: repeat(2, 96px 32px); 
+    grid-template-rows: repeat(2, 50% 15%); 
     background-color: var(--bg-light);
-    margin-block: 2%;
+    margin-block: 4%;
     padding-block: 2%;
     border-radius: 10px;
     display: grid; 
     grid-auto-flow: row dense;
+    -webkit-box-shadow: 10px 20px 0px 0px var(--yellow),
+    20px -20px 2rem 0px var(--pink); 
+    box-shadow: -20px 20px 2rem 0px var(--yellow),
+    20px -20px 2rem 0px var(--pink);
 }
 
 .skill__block *:nth-child(3n){
@@ -24,4 +28,15 @@
     justify-self: center;
     align-self: center;
     margin-block: 2%;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .skill__block{
+        aspect-ratio: 1 / 0.65;
+        width: 40vw;
+        margin-block: 5%;
+        padding-block: 2%;
+        grid-template-rows: repeat(2, 40% 12%); 
+    }
 }

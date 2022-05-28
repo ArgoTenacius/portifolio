@@ -3,19 +3,36 @@
     justify-content: center;
     flex-direction: column;
     transition: ease-in-out 0.2s;
+    cursor: pointer;
 }
 
 .skillCard__container{
-    width: 96px;
-    height: 96px;
+    aspect-ratio: 1 / 1;
+    width: max(7vw, 96px);
     background-color: var(--white-light);
-    border-radius: 10px;
+    border-radius: max(1vw, 10px);
     display: flex;
     justify-content: center;
 }
 
+.skillCard__container-image{
+    aspect-ratio: 1 / 1;
+    width: 65%;
+}
+
 .skillCard__title{
     height: 0px;
-    font-size: clamp(0.5rem, 2vw, 1.25rem);
+    font-size: max(1.80vw, 0.75rem);
     color: var(--white-light);
+}
+
+@media screen and (max-width: 960px) {
+    .skillCard__container{
+        width: clamp(24px, 7vw, 64px);
+        border-radius: clamp(5px, 1vw, 10px);
+    }
+
+    .skillCard__title{
+        font-size: clamp(0.5rem, 2vw, 1rem);
+    }
 }
