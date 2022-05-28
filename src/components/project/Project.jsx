@@ -16,8 +16,8 @@ const Project = () => {
                         <h1 className='project__section-details--title'>{index.name}</h1>
                         <h4 className='project__section-details--description'>{index.description}</h4>
                         <div className='project__section-details--buttons'>
-                            <a href={index.repository}><button>Repository</button></a>
-                            <a href={index.live}><button>Live</button></a>
+                            <a href={index.repository} target='_blank' ><button>Repository</button></a>
+                            <a href={index.live} target='_blank'><button>Live</button></a>
                         </div>
                     </div>
                 </section>

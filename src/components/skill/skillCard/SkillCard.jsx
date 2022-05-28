@@ -13,10 +13,16 @@ const SkillCard = ({name, icon}) => {
     animation: "goDown 200ms forwards"
   }
 
-  useEffect(() => { console.log(mouseHover)}, [mouseHover])
+  const showCardTitle = (show) => {
+    setMouseHover(show)
+  }
+
+  useEffect(() => { 
+    window.innerWidth > 960 ? showCardTitle(false) : showCardTitle(true)
+  }, [])
 
   return (
-    <div className='skillCard' onMouseEnter={() => setMouseHover(true)} onMouseLeave={() => setMouseHover(false)}>
+    <div className='skillCard' onMouseEnter={() => showCardTitle(true)} onMouseLeave={() => showCardTitle(false)}>
       <div className='skillCard__container' style={mouseHover ? mouseEnter : mouseLeave}>
           <img className='skillCard__container-image' src={icon} alt={name} />
       </div>

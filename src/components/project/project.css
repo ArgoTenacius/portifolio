@@ -1,7 +1,6 @@
 .project__section{
     display: flex;
     justify-content: space-between;
-    padding-inline: 4%;
 }
 
 .project__section:nth-child(even){
@@ -10,9 +9,9 @@
 
 .project__section-images--photo{
     aspect-ratio: 2 / 1;
-    width: clamp(480px, 50vw, 640px);
+    width: max(50vw, 480px);
     height: auto;
-    border-radius: 20px;
+    border-radius: max(0.90vw, 20px);
 }
 
 .project__section-images, .project__section-details{
@@ -27,11 +26,12 @@
 }
 
 .project__section-details--title{
+    font-size: max(3vw, 16px);
     color: var(--white-light);
 }
 
 .project__section-details--description{
-    font-size: clamp(12px, 1.25vw, 16px);
+    font-size: max(12px, 1.25vw);
     color: var(--white);
 }
 
@@ -49,18 +49,19 @@
 .project__section-details--buttons button{
     cursor: pointer;
     background-color: transparent;
-    width: clamp(100px, 15vw,200px);
-    font-size: clamp(16px, 5vw, 24px);
+    aspect-ratio: 3 / 1;
+    width: max(15vw, 200px);
+    font-size: max(2.2vw, 24px);
     color: var(--white);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: max(0.75vw, 10px);
     border: 2px solid var(--pink);
     transition: ease-in-out 0.2s;
 }
 
 .project__section-details--buttons button:hover{
     letter-spacing: 2px;
-    box-shadow: inset 0 -50px 0 0 var(--pink),
+    box-shadow: inset 0 calc(-15vw / 3) 0 0 var(--pink),
     0 0 0.5rem 0 var(--pink),
     0 0 1rem 0 var(--pink),
     0 0 2rem 0 var(--pink);
@@ -88,15 +89,27 @@
     }
 
     .project__section-details--description{
-        font-size: clamp(16px, 2.5vw, 24px);
+        font-size: clamp(8px, 4vw, 24px);
+    }
+
+    .project__section-details--title{
+        font-size: clamp(12px, 5vw, 28px);
     }
 
     .project__section-details--buttons button{
-        width: 200px;
-        font-size: 2rem;
+        width: clamp(40px, 25.5vw, 200px);
+        font-size: clamp(0.5rem, 3vw, 1.5rem);
+    }
+
+    .project__section-details--buttons button:hover{
+        box-shadow: inset 0 calc(-200px / 3) 0 0 var(--pink),
+        0 0 0.5rem 0 var(--pink),
+        0 0 1rem 0 var(--pink),
+        0 0 2rem 0 var(--pink);
     }
 
     .project__section-images--photo{
-        width: clamp(480px, 90%, 960px);
+        width: clamp(180px, 90%, 960px);
+        border-radius: clamp(10px, 1vw, 20px);
     }
 }
