@@ -7,6 +7,11 @@ import SkillCard from './skillCard/SkillCard'
 
 const Skill = () => {
   return (
+    <>
+    <div className='section__separator'>
+        <h1>My skills</h1>
+        <div className='line'></div>
+    </div>
     <main className='skill'>
         <section className='skill__block'>
             {
@@ -23,6 +28,7 @@ const Skill = () => {
             }
         </section>
     </main>
+    </>
   )
 }
 

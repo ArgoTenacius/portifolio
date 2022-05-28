@@ -27,12 +27,45 @@
 :root{
     --bg: #241734;
     --bg-light: #2E2157;
-    --red: #A31621;
     --yellow: #E3B505;
     --pink: #F706CF;
     --white-light: rgba(255, 255, 255, 0.87);
     --white: rgba(255, 255, 255, 0.70);
     --white-dark: rgba(255, 255, 255, 0.48);
+}
+
+.box-shadow{
+    box-shadow: 
+        0 0 0.5rem 0 currentColor,
+        0 0 1rem 0 currentColor,
+        0 0 2rem 0 currentColor;
+}
+
+.text-shadow{
+    text-shadow: 
+        0 0 0.5rem currentColor,
+        0 0 1rem currentColor,
+        0 0 2rem currentColor;
+}
+
+.section__separator{
+    padding-inline: 2%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.section__separator h1{
+    float: left;
+    color: var(--white-light);
+    padding-inline: 20px;
+}
+
+.line{
+    flex: 1 1;
+    color: var(--white-light);
+    height: 1px;
+    background-color: currentColor;
 }
 
 .page{
@@ -41,14 +74,10 @@
     background-color: var(--bg);
 }
 
-.red{
-    color: var(--red);
-}
-
 .yellow{
-    color: var(--yellow);
+    color: var(--yellow) !important;
 }
 
 .pink{
-    color: var(--pink);
+    color: var(--pink) !important;
 }

@@ -5,6 +5,7 @@ import { Project, Skill } from './components'
 const App = () => {
   return (
     <main className='page'>
+      <Skill />
       <Project />
     </main>
   )

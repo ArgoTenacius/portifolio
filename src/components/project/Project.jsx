@@ -1,11 +1,14 @@
 import React from 'react'
 import './project.css'
 import { project } from '../../data/project'
-import { useState } from 'react'
 
 const Project = () => {
   return (
     <main className='project'>
+        <div className='section__separator'>
+            <h1>Featured projects</h1>
+            <div className='line'></div>
+        </div>
         {
             project.map((index) => (
                 <section className='project__section'>
@@ -16,8 +19,8 @@ const Project = () => {
                         <h1 className='project__section-details--title'>{index.name}</h1>
                         <h4 className='project__section-details--description'>{index.description}</h4>
                         <div className='project__section-details--buttons'>
-                            <a href={index.repository} target='_blank' ><button>Repository</button></a>
-                            <a href={index.live} target='_blank'><button>Live</button></a>
+                            <a href={index.repository} target='_blank' rel='noreferrer'><button>Repository</button></a>
+                            <a href={index.live} target='_blank' rel='noreferrer'><button>Live</button></a>
                         </div>
                     </div>
                 </section>
