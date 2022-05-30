@@ -40,7 +40,7 @@ const LandingPage = () => {
         write()
     }
 
-    const init = () => {
+    const initWrite = () => {
         const textList = [
             "front-end developer", 
             "programmer",
@@ -50,7 +50,7 @@ const LandingPage = () => {
     }
 
     useEffect(() => {
-        init();
+        initWrite();
     }, [])
 
     return (
