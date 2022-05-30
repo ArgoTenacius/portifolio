@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ArgoTenacius/portifolio/static/css/main.27a5d19a.css",
-    "main.js": "/ArgoTenacius/portifolio/static/js/main.9b18261a.js",
-    "index.html": "/ArgoTenacius/portifolio/index.html",
-    "main.27a5d19a.css.map": "/ArgoTenacius/portifolio/static/css/main.27a5d19a.css.map",
-    "main.9b18261a.js.map": "/ArgoTenacius/portifolio/static/js/main.9b18261a.js.map"
+    "main.css": "/portifolio/static/css/main.27a5d19a.css",
+    "main.js": "/portifolio/static/js/main.9b18261a.js",
+    "index.html": "/portifolio/index.html",
+    "main.27a5d19a.css.map": "/portifolio/static/css/main.27a5d19a.css.map",
+    "main.9b18261a.js.map": "/portifolio/static/js/main.9b18261a.js.map"
   },
   "entrypoints": [
     "static/css/main.27a5d19a.css",
