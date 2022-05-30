@@ -14,6 +14,16 @@
     border-radius: max(0.90vw, 20px);
 }
 
+.project__section:nth-child(even) img{
+    -webkit-box-shadow: 6px 6px 0px 5px var(--bg-light); 
+    box-shadow: 6px 6px 0px 5px var(--bg-light);
+}
+
+.project__section:nth-child(odd) img{
+    -webkit-box-shadow: -6px 6px 0px 5px var(--bg-light); 
+    box-shadow: -6px 6px 0px 5px var(--bg-light);
+}
+
 .project__section-images, .project__section-details{
     margin: 2%;
 }
@@ -111,5 +121,6 @@
     .project__section-images--photo{
         width: clamp(180px, 90%, 960px);
         border-radius: clamp(10px, 1vw, 20px);
+        box-shadow: 100%;
     }
 }

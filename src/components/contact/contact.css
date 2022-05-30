@@ -9,14 +9,22 @@
     margin-block: 0.5rem;
 }
 
+.contact h1{
+    font-size: clamp(1rem, 2.5vw, 8rem);
+}
+
+.contact__others a{
+    color: white;
+}
+
 .contact__others-icon{
     cursor: pointer;
-    font-size: 3rem;
+    font-size: clamp(3rem, 4vw, 12rem);
     transition: ease-in-out 0.2s;
 }
 
 .contact__others-icon:hover{
-    color: var(--pink);
+    color: var(--pink) !important;
     text-shadow: 
         0 0 0.5rem currentColor,
         0 0 1rem currentColor,

@@ -34,6 +34,26 @@
     --white-dark: rgba(255, 255, 255, 0.48);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--yellow);
+    transition: 0.2s;
+    border-radius: 10px;
+  }
+
 .box-shadow{
     box-shadow: 
         0 0 0.5rem 0 currentColor,
@@ -50,12 +70,14 @@
 
 .section__separator{
     padding-inline: 2%;
+    padding-block: 2%;
     width: 75%;
     display: flex;
     align-items: center;
 }
 
 .section__separator h1{
+    font-size: clamp(1.25rem, 2vw, 6rem);
     float: left;
     color: var(--white-light);
     padding-inline: 20px;
