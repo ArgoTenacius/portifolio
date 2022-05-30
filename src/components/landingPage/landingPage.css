@@ -20,7 +20,8 @@
 }
 
 .landing__introduction h1{
-    font-size: clamp(1.5rem, 7vw, 15rem);
+    font-size: clamp(1.25rem, 5.5vw, 15rem);
+    white-space: nowrap;
 }
 
 .landing__introduction h6{
@@ -29,7 +30,7 @@
 }
 
 .landing__arrow{
-  font-size: clamp(1rem, 3vw, 6rem);
+  font-size: clamp(3rem, 5vw, 9rem);
   color: var(--white-dark);
   position: absolute;
   bottom: 0;
