@@ -10,8 +10,8 @@ const Project = () => {
             <div className='line'></div>
         </div>
         {
-            project.map((index) => (
-                <section className='project__section'>
+            project.map((index, id) => (
+                <section key={id} className='project__section'>
                     <div className='project__section-images'>
                         <img src={index.photo} className="project__section-images--photo" alt={index.name}/>
                     </div>
