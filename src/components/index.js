@@ -1,2 +1,5 @@
 export { default as Skill } from './skill/Skill'
 export { default as Project } from './project/Project'
+export { default as Contact } from './contact/Contact'
+export { default as AboutMe } from './aboutMe/AboutMe'
+export { default as LandingPage } from './landingPage/LandingPage'

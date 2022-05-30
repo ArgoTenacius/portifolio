@@ -1,0 +1,16 @@
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.about__text{
+    width: 60%;
+    text-align: center;
+    font-size: clamp(16px, 1.75vw, 6rem);
+    color: var(--white-light);
+}
+
+.about__text a {
+    color: var(--pink);
+    text-decoration: none;
+}
